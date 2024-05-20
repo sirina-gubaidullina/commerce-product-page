@@ -1,0 +1,34 @@
+.form-container {
+  display: grid;
+  gap: 0.6rem;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.button-confirm {
+  height: 3rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 9px;
+  font-weight: 500;
+  color: white;
+}
+.button-confirm:hover,
+.button-confirm:active {
+  background-color: hsl(26, 100%, 55%, 0.7);
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  border: 1px solid hsl(220, 14%, 75%);
+  border-radius: 5px;
+}
+.invalid input {
+  border-color: hsl(26, 100%, 55%);
+  background-color: hsl(26, 100%, 82%);
+}

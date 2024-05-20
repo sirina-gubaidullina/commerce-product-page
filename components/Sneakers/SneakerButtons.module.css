@@ -1,0 +1,68 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 9px;
+  padding: 0 0.5rem;
+}
+.amount {
+  display: flex;
+  align-items: center;
+}
+.amount p {
+  margin: 0;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.icon-button {
+  border: none;
+  background-color: hsl(223, 64%, 98%);
+  cursor: pointer;
+}
+.icon-button svg {
+  fill: hsl(26, 100%, 55%);
+}
+.icon-button svg:hover,
+.icon-button svg:active {
+  fill: hsl(26, 100%, 55%, 0.6);
+}
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 3.75rem;
+  cursor: pointer;
+  background-color: hsl(26, 100%, 55%);
+  box-shadow: 7px 7px 50px hsl(26, 100%, 55%, 0.5);
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+.add-button svg {
+  fill: white;
+}
+
+.add-button:hover,
+.add-button:active {
+  background-color: hsl(26, 100%, 55%, 0.6);
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-button {
+    height: 3.75rem;
+  }
+}

@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-menu {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 850ms;
+  z-index: 100;
+  animation: slide-right 300ms ease-out forwards;
+}
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.icon-menu {
+  display: none;
+  margin-right: 1rem;
+  border: none;
+  background-color: hsl(0, 0%, 0%, 0);
+  fill: #69707d;
+}
+.icon-close {
+  border: none;
+  background-color: hsl(0, 0%, 0%, 0);
+  fill: #69707d;
+  margin: 1rem 0 2rem 1rem;
+}
+.icon-menu:hover,
+.icon-menu:active,
+.icon-close:hover,
+.icon-close:active {
+  fill: hsl(220, 13%, 13%);
+}
+.main {
+  display: flex;
+  align-items: end;
+  margin: 2.8rem 0;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+.side-links {
+  list-style: none;
+  padding: 0;
+}
+.side-link {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(220, 13%, 13%);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 0 2rem 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 100;
+}
+
+.link {
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: hsl(219, 9%, 45%);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+.link:hover {
+  color: black;
+}
+.link:hover {
+  animation: anim-border-appear 0.3s forwards;
+}
+.link:hover,
+.link:active {
+  color: hsl(220, 13%, 13%);
+}
+.account {
+  display: flex;
+  align-items: center;
+}
+.line {
+  height: 1px;
+  background-color: hsl(220, 14%, 75%);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img {
+  width: 3.1rem;
+  cursor: pointer;
+}
+.img:hover,
+.img:active {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+@media (max-width: 850px) {
+  .nav-links {
+    display: none;
+  }
+  .icon-menu {
+    display: block;
+  }
+}

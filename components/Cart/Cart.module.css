@@ -1,0 +1,68 @@
+.cart-line {
+  height: 1px;
+  background-color: hsl(220, 14%, 75%);
+}
+.product-container {
+  margin: 1.6rem;
+}
+.cart h3 {
+  font-size: 1.3rem;
+  margin: 1.6rem;
+}
+
+.price {
+  display: flex;
+  gap: 0.6rem;
+}
+.total {
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+}
+.image {
+  max-width: 3.75rem;
+  border-radius: 5px;
+}
+.product-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  color: hsl(219, 9%, 45%);
+}
+.button-checkout {
+  height: 3.5rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  color: white;
+}
+.button-checkout:hover,
+.button-checkout:active {
+  background-color: hsl(26, 100%, 55%, 0.7);
+}
+svg {
+  cursor: pointer;
+}
+.delete {
+  border: none;
+  background-color: white;
+}
+.empty-container {
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
+}
+.svg-image {
+  fill: #69707d;
+}
+.svg-image:hover,
+.svg-image:active {
+  fill: hsl(220, 13%, 13%);
+}

@@ -1,0 +1,47 @@
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  margin-right: 2.8rem;
+  color: #69707d;
+}
+
+.svg-image {
+  fill: #69707d;
+}
+.svg-image:hover,
+.svg-image:active {
+  fill: hsl(220, 13%, 13%);
+}
+.badge {
+  position: absolute;
+  top: 38px;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  font-family: inherit;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 20px;
+  height: 15px;
+}
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
